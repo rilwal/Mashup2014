@@ -10,6 +10,10 @@
         function ($scope, $http) {
             $scope.problems = [{'text': 'Businesses want this...'}];
             $scope.p = {'text': ''}
+            
+            $scope.solutions = [{'text': 'We will make this...'}];
+            $scope.s = {'text': ''}
+            
             $scope.active="home";
             $('#navbar >* >* >*').click(function(){
                 $scope.active=$(this).attr('data-target');
@@ -17,7 +21,7 @@
             });
             
             $scope.pushProblem = function () {
-                $scope.problems.push($scope.p);   
+                $scope.solutions.push({'text': $scope.s.text});   
             }
         }]);
 }());

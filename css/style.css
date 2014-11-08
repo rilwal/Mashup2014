@@ -1,5 +1,29 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 
+.yes {
+     color: green;   
+}
+
+.no {
+     color: red;   
+}
+
+a {
+       color: #428bca;
+}
+
+th {
+     text-align: left;
+}
+
+td {
+     text-align: left;   
+}
+
+ a :visited {
+      color: #428bca;
+ }
+
 body {
     font-family: "Open Sans", sans-serif;
      margin: 0px;   
@@ -61,15 +85,6 @@ table {
 
 td {
     padding: 5px;   
-}
-
-
-textarea{
-    height: 10em;   
-}
-
-td[rowspan = 2] textarea{
-    height: 20em;
 }
 
 input[type=text] {

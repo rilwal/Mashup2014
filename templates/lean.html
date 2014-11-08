@@ -6,7 +6,7 @@
             <h4>Problem</h4>
             <ul>
             <li ng-repeat="problem in problems">
-                {{problem.text}}
+                {{problem.text}} <sup><a href='#' ng-click='problems.pop(problem)'>x</a></sup>
             </li>
                 <li>{{p.text}}</li>
             </ul>
@@ -14,7 +14,13 @@
         </td>
         <td>
             <h4>Solution</h4>
-            <textarea></textarea>
+            <ul>
+            <li ng-repeat="solution in solutions">
+                {{solution.text}} <sup><a href='#' ng-click='solutions.pop(solution)'>x</a></sup>
+            </li>
+                <li>{{s.text}}</li>
+            </ul>
+            <input ng-model="s.text"><button ng-click="pushProblem()">+</button>
         </td>
         <td rowspan=2 colspan=2>
             <h4>Unique Value Proposition</h4>
@@ -29,7 +35,6 @@
     <tr>
         <td>
             <h4>Key Metrics</h4>
-            <textarea></textarea>
         </td>
         <td>
             <h4>Channels</h4>
