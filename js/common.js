@@ -21,7 +21,8 @@
             });
             
             $scope.pushProblem = function () {
-                $scope.problems.push({'text': $scope.p.text});   
+                $scope.problems.push({'text': $scope.p.text});
+                $scope.p.text = '';
             }
         }]);
 }());
