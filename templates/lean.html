@@ -6,7 +6,8 @@
             <p ng-repeat="problem in problems">
                 {{problem.text}}
             </p>
-            <input><button>+</button>
+            
+            <input ng-model=p.text><button ng-click="pushProblem()">+</button>
         </td>
         <td>
             <h4>Solution</h4>

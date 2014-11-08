@@ -14,5 +14,6 @@
                 $http.get('templates/'+$scope.active+'.html');
             });
             
+            function 
         }]);
 }());
