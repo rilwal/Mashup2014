@@ -21,7 +21,7 @@
             });
             
             $scope.pushProblem = function () {
-                $scope.solutions.push({'text': $scope.s.text});   
+                $scope.problems.push({'text': $scope.p.text});   
             }
         }]);
 }());
