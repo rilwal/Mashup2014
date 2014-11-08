@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js">
     <title>Satus</title>
 </head>
 <body ng-controller="startupCtrl">
@@ -13,7 +14,8 @@
            <li><a data-target='home' href=#>Home</a></li>
            <li><a data-target='info' href=#>Information</a></li>
            <li><a data-target='lean' href=#>Lean Canvas</a></li>
-       </ul>
+           <li><a data-target='contact' href=#>Contact</a></li>
+      </ul>
    </nav>
     <div ng-include class="container" src="'templates/'+active+'.html'">      
         
