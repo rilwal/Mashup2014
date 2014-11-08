@@ -8,12 +8,16 @@
     }]);
     startupApp.controller('startupCtrl', ['$scope', '$http',
         function ($scope, $http) {
+            $scope.problems = [{'text': 'Businesses want this...'}];
+            $scope.p = {'text': ''}
             $scope.active="home";
             $('#navbar >* >* >*').click(function(){
                 $scope.active=$(this).attr('data-target');
                 $http.get('templates/'+$scope.active+'.html');
             });
             
-            function 
+            $scope.pushProblem = function () {
+                $scope.problems.push($scope.p);   
+            }
         }]);
 }());

@@ -1,13 +1,16 @@
 <h2>Lean Canvas | <span class=sub>The simple business plan</span></h2>
+<p>My end user is <span ng-model='user'></span><input ng-model='user'><button>✓</button></p>
 <table border=1>
     <tr>
         <td rowspan=2>
             <h4>Problem</h4>
-            <p ng-repeat="problem in problems">
+            <ul>
+            <li ng-repeat="problem in problems">
                 {{problem.text}}
-            </p>
-            
-            <input ng-model=p.text><button ng-click="pushProblem()">+</button>
+            </li>
+                <li>{{p.text}}</li>
+            </ul>
+            <input ng-model="p.text"><button ng-click="pushProblem()">+</button>
         </td>
         <td>
             <h4>Solution</h4>
