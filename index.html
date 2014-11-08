@@ -7,17 +7,18 @@
     <title>Satus</title>
 </head>
 <body ng-controller="startupCtrl">
-    <nav>
+    <nav id="navbar">
         <span class=title>Satus</span>
        <ul>
-           <li><a href=#>Home</a></li>
-           <li><a href=#>Lean Canvas</a></li>
-           <li><a href=#>link 2</a></li>
-           <li><a href=#>link 3</a></li>
+           <li><a data-target='home' href=#>Home</a></li>
+           <li><a data-target='lean' href=#>Lean Canvas</a></li>
        </ul>
    </nav>
-    <div class="container">       
+    <div ng-include class="container" src="'templates/'+active+'.html'">      
+        
     </div>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
     <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js'></script>
+    <script src='js/common.js'></script>
 </body>
 </html>

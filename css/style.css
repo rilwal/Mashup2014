@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -55,12 +55,42 @@ ul {
      margin: 0px;   
 }
 
+table {
+    width: 100%;   
+}
+
+td {
+    padding: 5px;   
+}
+
+
+textarea{
+    height: 10em;   
+}
+
+td[rowspan = 2] textarea{
+    height: 20em;
+}
+
+input[type=text] {
+     width:90%;
+}
+
+/* Large */
+@media screen and (min-width: 1200px){
+    .container {
+        width: 1200px;
+    }   
+}
+
+/* Medium */
 @media screen and (min-width: 970px) and  (max-width: 1200px){
     .container {
          width: 970px;   
     }
 }
 
+/* Small */
 @media screen and (max-width: 969px){
     .container {
          width : 80%;   
@@ -70,4 +100,8 @@ ul {
 .container {
     margin: auto;
     padding: 10px;
+}
+
+.sub {
+    font-weight: 100;   
 }
